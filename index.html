@@ -20,11 +20,16 @@
     <main>
         <section class="bg-blue-100 rounded-lg w-9/12 mx-auto mt-6 p-8">
             <h3>Please Log In</h3>
-            <input class="w-9/12 block mb-2 px-3 py-3 mt-5 rounded-md" type="text" placeholder="Email" required>
-            <input class="w-9/12  block mb-2 px-3 py-3 rounded-md" type="text" placeholder="Password" required>
-            <button class="bg-amber-400 rounded-md px-4 py-2 text-white mt-2">Submit</button>
+            <input id="input-email" class=" w-9/12 block mb-2 px-3 py-3 mt-5 rounded-md" type="email"
+                placeholder="Email" required>
+            <input id="input-password" class=" w-9/12  block mb-2 px-3 py-3 rounded-md" type="password"
+                placeholder="Password" required>
+            <button class="bg-amber-400 hover:bg-sky-700 rounded-md px-4 py-2 text-white mt-2"
+                id="login-from-button">Submit</button>
         </section>
     </main>
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
