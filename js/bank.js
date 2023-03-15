@@ -1,17 +1,17 @@
 //deposit area
 document.getElementById("deposite-from-button").addEventListener('click', function () {
     const bankDeposit = document.getElementById('input-deposite');
-    const bankDepositValue = bankDeposit.value;
+    const bankDepositValue = parseFloat(bankDeposit.value);
     //clear the value area
     bankDeposit.value = '';
 
-    if (isNaN(bankDepositValue)) {
+    if (isNaN(bankDepositValue)){
         alert('please enter a valid number')
         return
     }
     const totalDepositElement = document.getElementById('total-deposite');
     const previousTotalDepositValue = totalDepositElement.innerText;
-    const currentDepositTotal = parseFloat(previousTotalDepositValue) + parseFloat(bankDepositValue);
+    const currentDepositTotal = parseFloat(previousTotalDepositValue) +bankDepositValue;
     totalDepositElement.innerText = currentDepositTotal;
 
 
